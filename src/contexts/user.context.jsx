@@ -1,10 +1,11 @@
-import { createContext, useState, useEffect } from 'react';
+import { createContext, useState, useEffect } from "react";
 
 import {
   onAuthStateChangedListener,
   createUserDocumentFromAuth,
-} from '../utils/firebase/firebase.utils';
+} from "../utils/firebase/firebase.utils";
 
+//este es el default value que se le asigna al context
 export const UserContext = createContext({
   setCurrentUser: () => null,
   currentUser: null,
